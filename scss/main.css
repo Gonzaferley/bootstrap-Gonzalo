@@ -7,20 +7,16 @@ button,
 .amiibo-name {
   font-family: "Bitter", serif;
 }
+
 #navbar {
   z-index: 1;
 }
 
 #ribbon {
-  background-color: rgb(219, 26, 26);
-  background-image: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 25px,
-    rgba(131, 21, 21, 0.5) 25px,
-    rgba(131, 21, 21, 0.5) 40px
-  );
+  background-color: #db1a1a;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(131, 21, 21, 0.5) 25px, rgba(131, 21, 21, 0.5) 40px);
 }
+
 #ribbon::after {
   content: "";
   background-color: transparent;
@@ -32,12 +28,14 @@ button,
   left: auto;
   margin-top: -40px;
 }
+
 #separator-ribbon {
   width: 100%;
   overflow: hidden;
   position: relative;
   z-index: 2;
 }
+
 #separator-ribbon .content {
   width: 150%;
   height: 150px;
@@ -45,12 +43,14 @@ button,
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
+
 #birthday {
-  background-color: rgb(219, 26, 26);
+  background-color: #db1a1a;
   position: relative;
   margin-top: -20px;
   z-index: 10;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #birthday img {
@@ -59,9 +59,9 @@ button,
 }
 
 #games {
-  background: rgb(255, 255, 255);
-  background: url(../img/bg-02.png),
-    linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(99, 196, 255, 1) 57%);
+  background: white;
+  background: url(../img/bg-02.png), -webkit-gradient(linear, left bottom, left top, from(white), color-stop(57%, #63c4ff));
+  background: url(../img/bg-02.png), linear-gradient(0deg, white 0%, #63c4ff 57%);
   background-repeat: repeat-x;
   background-size: 75%;
   margin-top: -20px;
@@ -71,21 +71,26 @@ button,
   border: solid 10px white;
   border-radius: 20px;
   overflow: hidden;
+  -webkit-transition: all ease-out 0.2s;
   transition: all ease-out 0.2s;
 }
+
 .card-border:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .text-shadow {
   text-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
 }
+
 #separator-amiibos {
   width: 100%;
   overflow: hidden;
   position: relative;
   z-index: 2;
 }
+
 #separator-amiibos .content {
   background: url(../img/bg-03.png);
   width: 110%;
@@ -105,12 +110,16 @@ button,
   background-position: bottom center, center center;
   background-size: 100%, auto;
 }
+
 .amiibo {
   cursor: pointer;
+  -webkit-transition: all ease-out 0.2s;
   transition: all ease-out 0.2s;
 }
+
 .amiibo:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .amiibo-name {
@@ -124,12 +133,13 @@ button,
 
 #play {
   background: url(../img/bg-04.png);
-  background-color: rgb(255, 255, 219);
+  background-color: #ffffdb;
   background-size: 40px 40px;
 }
 
 #footer {
   background: url(../img/bg-04.png);
-  background-color: rgb(224, 144, 24);
+  background-color: #e09018;
   background-size: 50px 50px;
 }
+/*# sourceMappingURL=main.css.map */
