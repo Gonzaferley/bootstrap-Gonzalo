@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1,
 h2,
 h3,
@@ -9,6 +10,15 @@ button,
 }
 #navbar {
   z-index: 1;
+=======
+h1,h2,h3,h4,h5, button, .amiibo-name{
+    font-family: 'Bitter', serif;
+
+}
+#navbar{
+    z-index: 1;
+  
+>>>>>>> 11b6579fb40c780f7c7493c55a7d04efb4a9042d
 }
 
 #ribbon {
